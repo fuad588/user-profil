@@ -1,10 +1,10 @@
 import React from 'react'
 import './PersonalInfo.css'
-export default function PersonalInfo() {
+export default function PersonalInfo(props) {
   return (
     <div className='personalInfo'>
-      <h3>Personal Info</h3>
-      <p>I learn web programing.</p>
+      <h3>{props.title}</h3>
+      <p>{props.info}</p>
     </div>
   )
 }
